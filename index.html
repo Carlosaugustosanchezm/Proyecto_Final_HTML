@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="metadato" content="valor" http-equiv="cabecera-http" scheme="esquema">
+    <meta name="author" content="Carlos">
+    <meta name="keywords" content="">
+    <title>Sitio Web HTML</title>
+    <link rel="shortcut icon" href="assets/iconos/icons8HTML5.png" title="image/x-icon">
+    
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>HTML</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="temas.html">Temas</a></li>
+                <li><a href="herramientas.html">Herramientas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2 style="margin: 15px;">Historia del HTML</h2>
+    <hr>
+
+    <article class="container">
+        <h3>¿Que es HTML?</h3>
+        <img class="image" src="assets/img/html1.png" alt="HTML">
+        <p><b>HTML</b>(HyperText Markup Language) es un <em>lenguaje</em> de marcado utilizado para crear y estructurar
+            documentos en la World Wide Web. Básicamente, HTML permite a los desarrolladores web definir la estructura y
+            el contenido de una página web mediante el uso de etiquetas o elementos que rodean diferentes partes del
+            texto, imágenes, enlaces y otros elementos multimedia. Estas etiquetas describen cómo se debe mostrar el
+            contenido en un navegador web. <br><br>
+            <b>HTML</b> no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu
+            contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido
+            para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una
+            palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar
+            la letra, etc. Por ejemplo, toma la siguiente línea de contenido:
+        </p>
+        <img class="image2" src="/assets/img/html2.png" alt="HTML imagen">
+        <p>En el caso de <b>Párrafo</b> Si quieres especificar que se trata de un párrafo, podrías encerrar el texto con
+            la etiqueta de párrafo. <br>
+            <br><b>Las partes principales del elemento son:</b> <br> <strong>La Etiqueta de Apertura: </strong> consiste
+            en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares (<>) de apertura y cierre.
+                Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del
+                párrafo.
+        </p>
+        <img class="image" src="/assets/img/html3.jpg" alt="HTML">
+        <p>En el caso de <b>Párrafo</b> Si quieres especificar que se trata de un párrafo, podrías encerrar el texto con
+            la etiqueta de párrafo. <br>
+            <br><strong>La etiqueta de cierre: </strong> es igual que la etiqueta de apertura, excepto que incluye una
+            barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso dónde
+            termina el párrafo.
+        </p>
+        <p><br><strong>El contenido: </strong> este es el contenido del elemento, que en este caso es sólo texto.</p>
+        <p><br><strong>El elemento: </strong> la etiqueta de apertura, más la etiqueta de cierre, más el contenido
+            equivale al elemento.</p>
+
+        
+        <p><img class="image" src="/assets/img/html5.png" alt="HTML">
+            Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en el
+            contenido real del elemento. Aquí class es el nombre del atributo y editor-note el valor del atributo. En
+            este caso, el atributo class permite darle al elemento un nombre identificativo, que se puede utilizar luego
+            para apuntarle al elemento información de estilo y demás cosas.
+        </p>
+
+    </article>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
